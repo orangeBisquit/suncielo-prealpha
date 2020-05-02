@@ -48,9 +48,12 @@ $color-yellow: #FDCE16
     &-promo
         height: 611px
         margin-bottom: 79px
+        h1
+            color: white
         
 .skills-about
-    height: 370px
+    height: 300px
+    margin-bottom: 79px
     &-unit
         width: 249px
         border: 1px solid $color-grey
@@ -59,7 +62,7 @@ $color-yellow: #FDCE16
         &-top
             width: 85px
             height: 85px
-            border: 2px solid $color-grey
+            border: 1px solid $color-grey
             background: white
             position: absolute
             left: 85px
@@ -67,10 +70,164 @@ $color-yellow: #FDCE16
             transform: rotate(45deg)
             transition: 0.5s
             &:hover
-                background-color: #FDCE16
+                background-color: $color-yellow
                 transition: 0.5s
+.about
+    height: 420px
+    position: relative
+    ::after
+        content: ""
+        position: absolute
+        z-index: -1
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-color: $color-yellow
+    
+    .col-md-6
+        min-height: 400px
+        background-color: yellow
+        &:last-child
+            background-color: red
 
+.latest-projects
+    height: 708px
+    position: relative
+    margin-bottom: 90px
+    .container
+        height: 100%
+        border: 2px solid green 
+    ::after
+        content: ""
+        position: absolute
+        z-index: -1
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-color: $color-grey
 
+.our-process
+    height: 600px
+    .container
+        height: 100%
+        border: 2px solid green
 
+.our-skills
+    height: 572px
+    position: relative
+    margin-bottom: 80px
+    .container
+        height: 100%
+        border: 2px solid green
+    ::after
+        content: ""
+        position: absolute
+        z-index: -1
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-color: $color-yellow
+.our-team
+    height: 609px
+    margin-bottom: 78px
+    .container
+        border: 2px solid blue
+        height: 100%
+    
+.from-the-blog
+    height: 636px
+    margin-bottom: 90px
+    position: relative
+    color: white /** delete **/
+    ::after
+        content: ""
+        position: absolute
+        z-index: -1
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-color: black
+
+.pricing
+    height: 912px
+    margin-bottom: 72px
+    .col-md-4
+        height: 600px
+        outline: 1px solid black
+        &:nth-of-type(2)
+            outline: 1px solid red
+
+.clients-say
+    height: 521px
+    position: relative
+    color: white /** delete **/
+    margin-bottom: 76px
+    ::after
+        content: ""
+        position: absolute
+        z-index: -1
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-color: black
+
+.news
+    height: 400px
+    margin-bottom: 78px
+    &-wrapper
+        display: flex
+        justify-content: space-between
+    .col-md-8
+        outline: 2px solid green
+    .col-md-4
+        outline: 2px solid red
+
+.footer
+    height: 576px
+    position: relative
+    color: white /** delete **/
+    .container
+        overflow: hidden
+    .row
+        
+    ::after
+        content: ""
+        position: absolute
+        z-index: -1
+        top: 0
+        left: 0
+        width: 100%
+        height: 85.6%
+        background-color: black
+    ::before
+        content: ""
+        position: absolute
+        z-index: -1
+        bottom: 0
+        left: 0
+        width: 100%
+        height: 24.4%
+        background-color: #2E2E2E
+    &-info
+        height: 219px
+        margin-top: 93px
+        margin-bottom: 32px
+        
+        .col-md-3
+            height: 210px
+            outline: 1px solid red
+    &-links
+        height: 149px
+        .col-md-4
+            outline: 1px solid green
+    &-copy
+        height: 80px
+        color: black
+        padding: 29px 0
 
 
