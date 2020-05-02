@@ -1,0 +1,76 @@
+$color-grey: #ACACAC
+$color-yellow: #FDCE16
+
+*
+    box-sizing: border-box
+
+.container
+    width: 1168px !important        
+.main
+    &-header
+        
+        .social
+            height: 31px
+            border: 1px solid green //delete
+            display: flex
+            justify-content: space-between
+            color: $color-grey
+            ::before
+                content: ""
+                position: absolute
+                top: 0
+                left: 0
+                width: 100% !important
+                height: 31px
+                border-bottom: 1px solid $color-grey
+            ::after
+                content: ""
+                position: absolute
+                z-index: -1
+                top: 123px
+                left: 0
+                width: 100%
+                height: 611px
+                background-color: black
+                
+    &-nav
+        height: 91px
+        display: flex
+        justify-content: space-between
+        border: 1px solid blue //delete
+        border-bottom: 1px solid $color-grey
+        .navbar
+            min-width: 600px
+            height: 91px
+            display: flex
+            justify-content: space-around
+            align-content: center
+    &-promo
+        height: 611px
+        margin-bottom: 79px
+        
+.skills-about
+    height: 370px
+    &-unit
+        width: 249px
+        border: 1px solid $color-grey
+        height: 300px 
+        position: relative 
+        &-top
+            width: 85px
+            height: 85px
+            border: 2px solid $color-grey
+            background: white
+            position: absolute
+            left: 85px
+            top: -43px 
+            transform: rotate(45deg)
+            transition: 0.5s
+            &:hover
+                background-color: #FDCE16
+                transition: 0.5s
+
+
+
+
+
